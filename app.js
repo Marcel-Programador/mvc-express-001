@@ -4,7 +4,7 @@ const port = 3000;
 const userRoute = require("./src/routes/userRoute");
 const indexRoute = require("./src/routes/indexRoute");
 // Pasta estatica para acesso externo
-app.ussse(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 // Configura o template engine
 app.set("view engine", "ejs");
 // Configura o caminho para os Views
